@@ -33,7 +33,7 @@ if st.button('Simular'):
     df_novo_cliente = pd.DataFrame(data=respostas,columns=features)
     resultado = modelo.predict(df_novo_cliente)
 
-    if resultado:
+    if resultado[0]:
         st.write('## Crédito aprovado')
     else:
         st.write('## Crédito não aprovado')
