@@ -33,10 +33,10 @@ if st.button('Simular'):
     df_novo_cliente = pd.DataFrame(data=respostas,columns=features)
     resultado = modelo.predict(df_novo_cliente)
 
-    if resultado[0]:
-        st.write('## Crédito aprovado')
-    else:
+    if resultado[0]: # Mau igual a verdadeiro
         st.write('## Crédito não aprovado')
+    else:
+        st.write('## Crédito aprovado')
 
     resp_colunas_continuas_1 = []
     resp_colunas_categoricas_binarias = []
