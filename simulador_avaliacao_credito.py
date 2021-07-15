@@ -5,7 +5,7 @@ from utils import OneHotEncoder_Colunas
 
 modelo = load('objetos/modelo.joblib')
 lista_campos = load('objetos/lista_campos.joblib')
-colunas_continuas_1 = load('objetos/colunas_continuas_1.joblib')
+colunas_continuas_1 = load('objetos/colunas_continuas.joblib')
 colunas_categoricas_nao_binarias = load('objetos/colunas_categoricas_nao_binarias.joblib')
 colunas_categoricas_binarias = load('objetos/colunas_categoricas_binarias.joblib')
 
