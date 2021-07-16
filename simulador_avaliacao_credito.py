@@ -3,7 +3,6 @@ import pandas as pd
 from joblib import load
 from utils import OneHotEncoder_Colunas
 
-
 #Carregando dados
 modelo = load('objetos/modelo.joblib')
 lista_campos = load('objetos/lista_campos.joblib')
